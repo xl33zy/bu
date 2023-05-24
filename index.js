@@ -24,7 +24,7 @@ async function setupContract() {
 
 function createAccountForDeploy() {
     accountForDeploy = web3.eth.accounts.privateKeyToAccount(
-        "0xa0f29e4229c3d38a482287ab4e756973da1b97a68567ffc2802d861418e4624d"
+        "0x1f5d354101af1c7728b3539213d483b538fac2f8d6f094dbcf380e1b720c26f1"
     );
     web3.eth.defaultAccount = accountForDeploy.address;
     console.log(
@@ -80,7 +80,7 @@ async function setupEvents() {
 function createAccountForEvent() {
     // для тестирования receiveEvent
     accountForEvent = web3.eth.accounts.privateKeyToAccount(
-        "0x3655f4135ee00ef7e85ea1e9b25eb4fd9ec0e3ce67b1284ce2b2ff8d6409262d"
+        "0x18795aa2e8623dd5dc9279aebbe8d52551ceb14b5be3e82669a168104d410b5c"
     );
     console.log(
         "Account for event created. Address: ",
@@ -152,4 +152,3 @@ main();
 // Создайте пару транзакций с вызовом указанных функций, убедитесь, что в терминал выводится информация о срабатывании событий
 
 // TERMINAL
-
